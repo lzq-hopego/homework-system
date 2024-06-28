@@ -11,15 +11,15 @@ const env=import.meta.env.MODE || 'prod'
 const EnvConfig={
     development:{
         baseApi:'//127.0.0.1/api',
-        mockApi:'https://www.fastmock.site/mock/e57abff016d8de66e9cd869e98cc05bc/api',
+        mockApi:'https://domain.com/api',
     },
     test:{
-        baseApi:'://zuoye-api.lizhanqi.cn:8080/api',
-        mockApi:'https://www.fastmock.site/mock/e57abff016d8de66e9cd869e98cc05bc/api',
+        baseApi:'://domain.com/api',
+        mockApi:'https://domain.com/api',
     },
     production:{
-        baseApi:'//zuoye-api.lizhanqi.cn:8081/api',
-        mockApi:'https://www.fastmock.site/mock/e57abff016d8de66e9cd869e98cc05bc/api',
+        baseApi:'//domain.com/api',
+        mockApi:'https://domain.com/api',
     },
 }
 
