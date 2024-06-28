@@ -46,7 +46,7 @@ const settime = async () => {
 const setkebiao = async () => {
 	let token=getcookie()
 	const env=import.meta.env.MODE || 'prod'
-	let url='https://zuoye-api.lizhanqi.cn:8081/api/kebiao?usertoken='+token
+	let url='https://adomin.com/api/kebiao?usertoken='+token
 	if (env==='development'){
 		url='http://127.0.0.1/api/kebiao?usertoken='+token
 	}
