@@ -1,0 +1,31 @@
+{
+  "globalStyle": {
+    "backgroundColor": "@bgColor",
+    "backgroundColorBottom": "@bgColorBottom",
+    "backgroundColorTop": "@bgColorTop",
+    "backgroundTextStyle": "@bgTxtStyle",
+    "navigationBarBackgroundColor": "#000000",
+    "navigationBarTextStyle": "@navTxtStyle",
+    "navigationBarTitleText": "ColorTimetable",
+    "navigationStyle": "custom"
+  },
+  "pages": [
+    { "path": "pages/splash/splash" ,
+	  "style": {
+			"navigationBarTitleText": "在线课表",
+		}
+	},
+    { "path": "pages/index/index" ,
+	  "style": {
+			"navigationBarTitleText": "在线课表",
+		}
+	},
+    { "path": "pages/detail/detail" ,"style": {"navigationBarTitleText": "编辑课程"}}
+  ],
+  "easycom": {
+    "autoscan": true,
+    "custom": {
+      "^U(.*)": "~/components/UnoUI/U$1/U$1.vue"
+    }
+  }
+}
