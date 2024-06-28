@@ -1488,23 +1488,4 @@ class GetShijian(APIView):
 class test(APIView):
     def get(self,request):
         
-#         stu=Student.objects.filter(classes_id=2).all()
-#         lt=[x.id for x in stu]
-#         ls=[
-#   { 's': '08:20', 'e': '09:05' }, { 's': '09:15', 'e': '10:00' },
-#   { 's': '10:20', 'e': '11:05' }, { 's': '11:15', 'e': '12:00' },
-#   { 's': '14:00', 'e': '14:45' }, { 's': '14:55', 'e': '15:40' },
-#   { 's': '16:00', 'e': '16:45' }, { 's': '16:55', 'e': '17:40' },
-#   { 's': '19:00', 'e': '19:45' }, { 's': '19:55', 'e': '20:40' },
-# ]
-#         ls1=[{'title': '信息安全技术与实施', 'location': '41517(多媒体)', 'teacher': '王宪凡', 'week': 1, 'start': 1, 'duration': 2, 'weeks': [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]}, {'title': '信息安全技术与实施', 'location': '51405(机房)', 'teacher': '王宪凡', 'week': 1, 'start': 3, 'duration': 2, 'weeks': [13, 14, 15]}, {'title': '信息安全技术与实施', 'location': '41517(多媒体)', 'teacher': '王宪凡', 'week': 3, 'start': 3, 'duration': 2, 'weeks': [13, 14, 15]}, {'title': '信息安全技术与实施', 'location': '41517(多媒体)', 'teacher': '王宪凡', 'week': 5, 'start': 1, 'duration': 2, 'weeks': [13, 14, 15]}, {'title': '职业素养（二）', 'location': '41519(多媒体)', 'teacher': '王琳', 'week': 2, 'start': 5, 'duration': 2, 'weeks': [1, 2, 3, 4, 5, 6, 7, 8]}, {'title': '网络安全应急响应', 'location': '41508(多媒体)', 'teacher': '李熠芳', 'week': 5, 'start': 3, 'duration': 2, 'weeks': [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]}, {'title': 'WEB安全技术', 'location': '41525(多媒体)', 'teacher': '冯金涛', 'week': 2, 'start': 1, 'duration': 2, 'weeks': [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]}, {'title': 'WEB安全技术', 'location': '41412(多媒体)', 'teacher': '冯金涛', 'week': 3, 'start': 7, 'duration': 2, 'weeks': [1, 2, 3, 4, 5, 6, 7, 8, 9]}, {'title': 'Kali Linux技术', 'location': '41412(多媒体)', 'teacher': '冯金涛', 'week': 1, 'start': 5, 'duration': 2, 'weeks': [5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]}, {'title': 'Kali Linux技术', 'location': '41412(多媒体)', 'teacher': '冯金涛', 'week': 1, 'start': 7, 'duration': 2, 'weeks': [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]}, {'title': 'Kali Linux技术', 'location': '51405(机房)', 'teacher': '冯金涛', 'week': 3, 'start': 1, 'duration': 2, 'weeks': [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]}, {'title': 'MSF渗透测试', 'location': '41315(多媒体)', 'teacher': '冯金涛', 'week': 1, 'start': 7, 'duration': 2, 'weeks': [15]}, {'title': 'MSF渗透测试', 'location': '41525(多媒体)', 'teacher': '冯金涛', 'week': 2, 'start': 3, 'duration': 2, 'weeks': [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]}, {'title': 'Linux系统运维管理', 'location': '41513(多媒体)', 'teacher': '曹兵', 'week': 3, 'start': 3, 'duration': 2, 'weeks': [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]}, {'title': 'Linux系统运维管理', 'location': '51506(机房)', 'teacher': '曹兵', 'week': 5, 'start': 1, 'duration': 2, 'weeks': [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]}, {'title': '四史教育', 'location': '41303(多媒体)', 'teacher': '姚宏章', 'week': 3, 'start': 7, 'duration': 2, 'weeks': [10, 11, 12, 13, 14, 15, 16, 17]}, {'title': '高职体育(四)', 'location': '体育任选', 'teacher': '体育任选', 'week': 5, 'start': 5, 'duration': 2, 'weeks': [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]}, {'title': '形势与政策(四)', 'location': '41312(多媒体)', 'teacher': '乔浩然', 'week': 2, 'start': 5, 'duration': 2, 'weeks': [14, 15, 16, 17]}]
-#         test=TimeTablesSerializers(data={'classes':1,
-#                                          'StartData':'2024-03-04',
-#                                         'TimeList':ls,
-#                                          'TimeTable':ls1 ,
-#                                          'Student':lt})
-#         if not test.is_valid():
-#             print(test.errors)
-#             # test.save()addzy_ser
-#         test.save()
         return Response('ok')
