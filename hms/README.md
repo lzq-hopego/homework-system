@@ -48,6 +48,15 @@
 
     
 ## 准备
+
+- pip安装所需依赖
+
+  ```
+  pip install -r requirements.txt
+  ```
+
+  
+
 - 需要开启的端口
 
   ```
@@ -92,6 +101,10 @@
 ## 上线
 
 - UWSGI
+
+  ```
+  yum install uwsgi   
+  ```
 
   > 推荐使用uwsgi并非测试时django自带的服务器
   >
