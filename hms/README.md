@@ -60,7 +60,8 @@
 - 需要开启的端口
 
   ```
-  465 #用于发送邮件
+  firewall-cmd --add-port=465/tcp --per #465端口用于发送邮件
+  firewall-cmd --reload
   ```
   
 - mysql 创建数据库
