@@ -85,8 +85,9 @@ C -->|django+drf| F[ 后端 ]
 
 - 学生提交作业页面
     ![](./images/img7.png)
-  
+
 - 在线课表页面
+  
     ![](./images/img8.png)
 
 ## 关于安全
