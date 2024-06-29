@@ -118,8 +118,6 @@
   ```
   #下列是uwsgi.ini文件的内容，第一行的[uwsgi]必须写
   [uwsgi]
-  # 使用http访问，0表示任何IP，8001表示端口号，要求同上
-  # http=0:9000
   # 绑定服务器的unix/tcp套接字
   socket=/www/hms/hms.sock
   # 项目的绝对路径
