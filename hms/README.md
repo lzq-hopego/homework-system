@@ -144,7 +144,7 @@
 
   ```
   upstream hms {
-    server unix:/www/wwwroot/hms/hms.sock;
+    server unix:/www/hms/hms.sock;
   }
   
   server
